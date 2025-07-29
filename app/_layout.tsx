@@ -17,10 +17,11 @@ export default function RootLayout() {
     // Async font loading only occurs in development.
     return null;
   }
+  
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack screenOptions={{headerShown: false,}}>
         <Stack.Screen name="index"></Stack.Screen>
         <Stack.Screen name="+not-found" />
       </Stack>
