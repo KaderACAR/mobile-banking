@@ -1,3 +1,4 @@
+import ActionsSection from '@/components/home-sections/actions.section'
 import CardSection from '@/components/home-sections/card.section'
 import React from 'react'
 import { View } from 'react-native'
@@ -13,7 +14,6 @@ const Page = () => {
             }}>
 
             <CardSection />
-
         </View>
         <View style={{
             flex: 1,
@@ -21,6 +21,7 @@ const Page = () => {
             borderWidth: 2,
             }}>
 
+            <ActionsSection />
         </View>
         <View style={{
             height: "32%",
